@@ -6,33 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="index-css.css">
+    <script src="index-js.js" defer></script>
 </head>
 <body>
 
     <div id="calculator">
-        <div id="display">12345</div>
+        <div id="display"></div>
         <div id="buttons">
             <button>AC</button>
-            <button>C</button>
-            <button>x<sup>y</sup></button>
-            <button>/</button>
-            <button data-type="number" id="num-7">7</button>
-            <button data-type="number" id="num-8">8</button>
-            <button data-type="number" id="num-9">9</button>
-            <button>+</button>
-            <button data-type="number" id="num-4">4</button>
-            <button data-type="number" id="num-5">5</button>
-            <button data-type="number" id="num-6">6</button>
-            <button>-</button>
-            <button data-type="number" id="num-1">1</button>
-            <button data-type="number" id="num-2">2</button>
-            <button data-type="number" id="num-3">3</button>
-            <button>*</button>
-            <button data-type="number" id="num-1">0</button>
-            <button>.</button>
-            <button>=</button>
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="operator" value="exponent">^</button>
+            <button class="operator" value="divide">/</button>
+            <button data-type="number" class="number" id="num-7" value="7">7</button>
+            <button data-type="number" class="number" id="num-8" value="8">8</button>
+            <button data-type="number" class="number" id="num-9" value="9">9</button>
+            <button class="operator" value="add">+</button>
+            <button data-type="number" class="number" id="num-4" value="4">4</button>
+            <button data-type="number" class="number" id="num-5" value="5">5</button>
+            <button data-type="number" class="number" id="num-6" value="6">6</button>
+            <button class="operator" value="subtract">-</button>
+            <button data-type="number" class="number" id="num-1" value="1">1</button>
+            <button data-type="number" class="number" id="num-2" value="2">2</button>
+            <button data-type="number" class="number" id="num-3" value="3">3</button>
+            <button class="operator" value="multiply">*</button>
+            <button data-type="number" class="number" id="num-0" value="0">0</button>
+            <button class="operator" value="decimal">.</button>
+            <button class="equals" value="equals">=</button>
         </div>
     </div>
     
 </body>
 </html>
+
+<!--
+What happens when you press a number?
+    stored as a variable?
+    passed to another function?
+    
+
+
+-->
